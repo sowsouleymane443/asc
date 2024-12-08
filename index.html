@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription à l'Association</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Inscription à l'Association des Élèves et Étudiants de Kay</h1>
+        <form id="registrationForm">
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="prenom">Prénom :</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="profession">Profession :</label>
+            <input type="text" id="profession" name="profession" required>
+
+            <label for="telephone">Numéro de téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <label for="preuve">Téléchargez la preuve de paiement :</label>
+            <input type="file" id="preuve" name="preuve" accept="image/*, .pdf" required>
+
+            <p>Effectuez votre paiement via Wave au numéro suivant :</p>
+            <p><strong>+221 XXX XXX XXX</strong></p>
+
+            <button type="submit">Envoyer</button>
+        </form>
+        <div id="confirmationMessage"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
